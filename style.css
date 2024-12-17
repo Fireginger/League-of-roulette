@@ -1,0 +1,136 @@
+/* --- CSS File: styles.css --- */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #212121;
+}
+
+.roulette {
+  width: 500px;
+  height: 150px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 2px solid black;
+  position: relative;
+}
+
+.items {
+  display: flex; /* Align items horizontally */
+  flex-direction: row; /* Ensure images are aligned in a single row */
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 8s cubic-bezier(0.25, 0.1, 0.25, 0.1);
+  padding-top: 25px;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #212121;
+  flex-shrink: 0; /* Prevent items from shrinking */
+}
+
+
+.item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.highlight {
+  position: absolute;
+  width: 97px;
+  height: 97px;
+  top: 24px;
+  left: 200px;
+  border: 3px solid gold;
+  pointer-events: none;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: gold;
+  width: 80px;
+  height: 40px;
+}
+
+.arrow-up {
+  position: absolute;
+  width: 50;
+  height: 50;
+  
+  border-right: 16px solid transparent;
+  border-left: 16px solid transparent;
+  
+  border-bottom: 20px solid gold;
+
+  left: 235px;
+  bottom : 0px;
+}
+
+.arrow-down {
+  position: absolute;
+  width: 50;
+  height: 50;
+  
+  border-right: 16px solid transparent;
+  border-left: 16px solid transparent;
+  
+  border-top: 20px solid gold;
+
+  left : 235px;
+  top: 0px;
+}
+
+h1 {
+  color : gold;
+  font-family: 'Montserrat', sans-serif;
+  font-weight : 600;
+  font-style: bold;
+}
+
+.item-roulette {
+  width: 500px;
+  height: 150px;
+  margin: 30px auto; /* Espacement entre les roulettes */
+  overflow: hidden;
+  border: 2px solid black;
+  position: relative;
+}
+
+.item2 {
+  display: flex; /* Align items horizontally */
+  flex-direction: row; /* Ensure images are aligned in a single row */
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 12s cubic-bezier(0.25, 0.1, 0.25, 0.1);
+  padding-top: 25px;
+}
+
+.item_item {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #212121;
+  flex-shrink: 0; /* Prevent items from shrinking */
+}
+
+
+.item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
